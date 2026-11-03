@@ -2,8 +2,8 @@
 
 Веб-приложение для управления задачами, разработанное в рамках лабораторной работы. Реализовано на JavaScript с использованием **DOM API** - без единого фреймворка и без единой строки разметки в HTML-файле.
 
-**Демо:** [https://DenisNikolsky.github.io/todo-list/](https://DenisNikolsky.github.io/todo-list/)  
-**Репозиторий:** [https://github.com/DenisNikolsky/todo-list](https://github.com/DenisNikolsky/todo-list)
+**Демо:** [https://denisnikolsky.github.io/Web_labs/Lab_2/](https://denisnikolsky.github.io/Web_labs/Lab_2/)  
+**Репозиторий:** [https://github.com/DenisNikolsky/Web_labs/edit/main/Lab_2/](https://github.com/DenisNikolsky/Web_labs/edit/main/Lab_2/)
 
 ---
 
@@ -190,10 +190,6 @@ npx serve
 
 ## Деплой
 
-Проект задеплоен через **GitHub Pages**:
-
-[https://DenisNikolsky.github.io/todo-list/](https://DenisNikolsky.github.io/todo-list/)
-
 **Как задеплоить самостоятельно:**
 1. Запушьте файлы `index.html` и `script.js` в ветку `main`.
 2. Откройте **Settings → Pages**.
@@ -234,7 +230,7 @@ docs: README со скриншотами
 
 ## 👤 Автор
 
-**Денис Никольтский**  
+**Денис Никольский**  
 Группа: `К3320`  
 Год: 2026
 
