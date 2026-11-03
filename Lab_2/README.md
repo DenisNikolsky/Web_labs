@@ -3,7 +3,7 @@
 Веб-приложение для управления задачами, разработанное в рамках лабораторной работы. Реализовано на JavaScript с использованием **DOM API** - без единого фреймворка и без единой строки разметки в HTML-файле.
 
 **Демо:** [https://denisnikolsky.github.io/Web_labs/Lab_2/](https://denisnikolsky.github.io/Web_labs/Lab_2/)  
-**Репозиторий:** [https://github.com/DenisNikolsky/Web_labs/edit/main/Lab_2/](https://github.com/DenisNikolsky/Web_labs/edit/main/Lab_2/)
+**Репозиторий:** [https://github.com/DenisNikolsky/Web_labs/tree/main/Lab_2](https://github.com/DenisNikolsky/Web_labs/tree/main/Lab_2)
 
 ---
 
