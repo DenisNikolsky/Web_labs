@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denis shop</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">🏠</span>
+        <span class="logo__text">Denis <span>shop</span></span>
+      </a>
+      <nav class="nav">
+        <a href="in-progress.html">Каталог</a>
+        <a href="in-progress.html">Доставка</a>
+        <a href="in-progress.html">О нас</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__inner">
+      <h1>Уютные вещи для дома</h1>
+      <p>Подборка товаров, которые делают дом теплее (в случае вывода приборов из строя перейдите в вкладку "Возврат"</p>
+    </div>
+  </section>
+
+  <main class="layout">
+    <section class="catalog" aria-labelledby="catalog-title">
+      <h2 id="catalog-title" class="section-title">Каталог товаров</h2>
+      <div class="products" id="products"></div>
+    </section>
+
+    <aside class="cart" aria-labelledby="cart-title">
+      <div class="cart__header">
+        <h2 id="cart-title">🛒 Корзина</h2>
+        <span class="cart__count" id="cart-count">0</span>
+      </div>
+
+      <ul class="cart-list" id="cart-list"></ul>
+      <p class="cart-empty" id="cart-empty">Корзина пуста</p>
+
+      <div class="cart-summary">
+        <span>Итого:</span>
+        <strong id="cart-total">0 ₽</strong>
+      </div>
+
+      <button class="btn btn-primary btn-block" id="checkout-btn" type="button">
+        Оформить заказ
+      </button>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__col">
+        <h3>Denis shop of something</h3>
+        <p>Уютные товары для дома с доставкой куда я захочу или куда захочет моя пятка.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Покупателям</h4>
+        <a href="in-progress.html">Доставка</a>
+        <a href="in-progress.html">Оплата</a>
+        <a href="in-progress.html">Возврат</a>
+      </div>
+      <div class="footer__col">
+        <h4>Компания</h4>
+        <a href="in-progress.html">О нас</a>
+        <a href="in-progress.html">Контакты</a>
+        <a href="in-progress.html">Вакансии</a>
+      </div>
+      <div class="footer__col">
+        <h4>Помощь</h4>
+        <a href="in-progress.html">FAQ</a>
+        <a href="in-progress.html">Поддержка</a>
+        <a href="in-progress.html">Гарантии</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      © 2026 ООО "тмыв денег". Все права защищены.
+    </div>
+  </footer>
+
+  <dialog class="modal" id="order-modal">
+    <form class="order-form" id="order-form" novalidate>
+        <h2>Оформление заказа</h2>
+
+        <label>
+            Имя
+            <input type="text" name="firstName" required placeholder="Иван" minlength="2">
+        </label>
+
+        <label>
+            Фамилия
+            <input type="text" name="lastName" required placeholder="Иванов" minlength="2">
+        </label>
+
+        <label>
+            Адрес доставки
+            <input type="text" name="address" required placeholder="г. Москва, ул. Ленина, 1" minlength="5">
+        </label>
+
+        <label>
+            Контактный телефон
+            <input
+            type="tel"
+            name="phone"
+            required
+            placeholder="+7 (999) 123-45-67"
+            inputmode="tel"
+            autocomplete="tel"
+            >
+            <span class="field-error" data-error-for="phone"></span>
+        </label>
+
+        <label>
+            Email <span class="field-hint">(необязательно)</span>
+            <input
+            type="email"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            >
+            <span class="field-error" data-error-for="email"></span>
+        </label>
+
+        <div class="modal-actions">
+        <button type="button" class="btn" id="close-modal">Отмена</button>
+        <button type="submit" class="btn btn-primary">Создать заказ</button>
+        </div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
